@@ -93,6 +93,15 @@ export default {
       this.markers.splice(index,1)
     },
     addMarker(index) {
+      let place = []
+      
+      place = this.markers.filter((item,counter) => counter === index)
+      if(place.length) {
+        this.markers[index].position.lat = this.destinations[index].aux.geometry.location.lat()
+        this.markers[index].position.lng = this.destinations[index].aux.geometry.location.lng()
+        return 
+      }
+
       if (this.destinations[index].aux) {
         const marker = {
           lat: this.destinations[index].aux.geometry.location.lat(),
