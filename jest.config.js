@@ -6,6 +6,9 @@ module.exports = {
   ],
   modulePathIgnorePatterns: [
     'src/main.js',
-    'node_modules',
-  ]
+  ],
+  transform:  {
+    '^.+\\.vue$': 'vue-jest',
+    '^.+\\.jsx?$': 'babel-jest'
+  }
 }
