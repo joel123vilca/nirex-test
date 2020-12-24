@@ -73,8 +73,7 @@ export default {
         aux:''
       }],
       center: { lat: -12.043954, lng: -77.035544 },
-      markers: [],
-      places: []
+      markers: []
     }
   },
   methods: {
@@ -100,7 +99,6 @@ export default {
           lng: this.destinations[index].aux.geometry.location.lng()
         };
         this.markers.push({ position: marker });
-        this.places.push(this.destinations[index].aux);
         this.center = marker;
       }
     }

@@ -5,7 +5,6 @@ module.exports = {
     '**/src/**/*.{js,vue}',
   ],
   modulePathIgnorePatterns: [
-    'store/index.js',
     'src/main.js',
     'node_modules',
   ]

@@ -5,7 +5,6 @@ describe('GoogleMap', () => {
 
   const build = () => {
     const wrapper = mount(GoogleMap)
-
     return {
       wrapper
     }
